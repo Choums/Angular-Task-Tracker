@@ -11,9 +11,12 @@ import { ButtonComponent } from './button/button.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskItemComponent } from './task-item/task-item.component';
 import { AddTaskComponent } from './add-task/add-task.component';
+import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
-  {path: '', component: TasksComponent}
+  {path: '', component: TasksComponent},
+  {path: 'about', component: AboutComponent}
 ]
 
 @NgModule({
@@ -23,7 +26,9 @@ const appRoutes: Routes = [
     ButtonComponent,
     TasksComponent,
     TaskItemComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
